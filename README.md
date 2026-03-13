@@ -1,21 +1,4 @@
 # Production-Ready Data Engineering System
-
-This project is an end-to-end data engineering system featuring a Mock Market Data API, an ETL Pipeline, and a PostgreSQL database, all containerized with Docker.
-
-## Architecture Diagram
-
-```mermaid
-graph TD
-    A[Source API (FastAPI)] -- JSON Data --> B[ETL Pipeline (Python)]
-    B -- Processed Records --> C[PostgreSQL Database]
-    B -- Validation Failures --> D[Log Analytics]
-    subgraph Docker Network
-        A
-        B
-        C
-    end
-```
-
 ## Setup Instructions
 
 1.  Clone the repository.
